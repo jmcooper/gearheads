@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-listing.component.css']
 })
 export class ProductListingComponent {
+  cart: any = [];
+
+  addToCart(product) {
+    this.cart.push(product);
+  }
+
+  getCartTotal() {
+    return this.cart.reduce((acc, product) => { return acc += product.price; }, 0);
+  }
+
+
   products = [
     {
       title: 'Arm: Articulated Claw',
@@ -97,5 +108,5 @@ export class ProductListingComponent {
       imageUrl: '/app/products/product-images/torso-pouch.png',
       price: 399.95
     },
-  ]
+  ];
 }

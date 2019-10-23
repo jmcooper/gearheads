@@ -1,10 +1,30 @@
-<div class="product-listing">
-  <div class="product" *ngFor="let product of products">
-    <img [src]="product.imageUrl"/>
-    <h2 class="title">{{product.title}}</h2>
-    <div class="price-line">
-      <div class="price">{{product.price | currency}}</div>
-      <button class="button-cta">Add to Cart</button>
+<div class="content">
+  <div class="products">
+    <h1 class="section-header">Products</h1>
+    <div class="product-listing">
+      <div class="product" *ngFor="let product of products">
+        <img [src]="product.imageUrl" />
+        <h2 class="title">{{product.title}}</h2>
+        <div class="price-line">
+          <div class="price">{{product.price | currency}}</div>
+          <button class="button-cta" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart">
+    <h1 class="section-header">Cart</h1>
+    <div class="cart-items">
+      <div class="empty-cart" *ngIf="cart.length === 0">There are no items in your cart</div>
+      <div class="cart-item" *ngIf="cart.length > 0"><button class="button-cta">Checkout</button></div>
+      <div class="cart-item" *ngFor="let cartItem of cart">
+        <img [src]="cartItem.imageUrl" />
+        <div class="cart-text">{{cartItem.title}}</div>
+        <div class="cart-text">{{cartItem.price | currency}}</div>
+      </div>
+      <div class="cart-item cart-total" *ngIf="cart.length > 0">
+        <div><span class="cart-total-label">Cart Total:</span> {{getCartTotal() | currency}}</div>
+      </div>
     </div>
   </div>
 </div>
