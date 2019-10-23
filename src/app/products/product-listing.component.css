@@ -1,0 +1,36 @@
+.product-listing {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  align-items: center;
+  background-color: #f7f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
+  margin: 20px;
+  width: 190px;
+}
+
+.product img {
+  width: 150px;
+}
+
+.product .title {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.price-line {
+  margin-top:10px;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.product .price {
+  font-size: 22px;
+}
+
+
