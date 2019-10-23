@@ -78,7 +78,9 @@
   padding: 10px 20px;
 }
 
-.cart-item button {
+.cart-item .button-cta {
+  text-decoration: none;
+  text-align: center;
   width: 100%;
   font-size: 22px;
   padding: 15px;
