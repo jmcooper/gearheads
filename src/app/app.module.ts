@@ -7,12 +7,14 @@ import { ProductListingComponent } from './products/product-listing.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { appRoutes } from './routes';
 import { CartService } from './checkout/cart.service';
+import { CartComponent } from './checkout/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListingComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

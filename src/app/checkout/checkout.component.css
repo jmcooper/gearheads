@@ -1,0 +1,8 @@
+.content {
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+.checkout {
+  width: 600px;
+}

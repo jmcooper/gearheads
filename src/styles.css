@@ -14,3 +14,11 @@ p {
 .button-cta:hover {
   color: rgb(186, 223, 240);
 }
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f5f5;
+  padding: 10px;
+  margin-bottom: 0;
+}

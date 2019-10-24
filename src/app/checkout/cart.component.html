@@ -1,0 +1,13 @@
+<div>
+  <div class="cart-items">
+    <div class="empty-cart" *ngIf="cart.length === 0">There are no items in your cart</div>
+    <div class="cart-item" *ngFor="let cartItem of cart">
+      <img [src]="cartItem.imageUrl" />
+      <div class="cart-text">{{cartItem.title}}</div>
+      <div class="cart-text">{{cartItem.price | currency}}</div>
+    </div>
+    <div class="cart-item cart-total" *ngIf="cart.length > 0">
+      <div><span class="cart-total-label">Cart Total:</span> {{getCartTotal() | currency}}</div>
+    </div>
+  </div>
+</div>

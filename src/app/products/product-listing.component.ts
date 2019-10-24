@@ -7,20 +7,15 @@ import { CartService } from '../checkout/cart.service';
   styleUrls: ['./product-listing.component.css']
 })
 export class ProductListingComponent {
-  cart: any;
+  cart: any = [];
 
   constructor(private cartService: CartService) {
-    this.cart = cartService.getCart();
+    this.cart = cartService
   }
 
   addToCart(product) {
     this.cartService.addToCart(product);
   }
-
-  getCartTotal() {
-    return this.cart.reduce((acc, product) => { return acc += product.price; }, 0);
-  }
-
 
   products = [
     {
