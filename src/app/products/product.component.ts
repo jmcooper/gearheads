@@ -8,6 +8,7 @@ import { CartService } from '../checkout/cart.service';
 })
 export class ProductComponent {
   @Input() product: any;
+  @Input() preview: boolean;
   @Output() addToCartClicked = new EventEmitter();
 
   addToCart(product) {

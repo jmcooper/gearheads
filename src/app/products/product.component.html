@@ -1,7 +1,7 @@
 <div class="product">
   <img [src]="product.imageUrl" />
   <h2 class="title">{{product.title}}</h2>
-  <div class="price-line">
+  <div class="price-line" *ngIf="!preview">
     <div class="price">{{product.price | currency}}</div>
     <button class="button-cta" (click)="addToCart(product)">Add to Cart</button>
   </div>

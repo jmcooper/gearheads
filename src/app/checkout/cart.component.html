@@ -3,7 +3,7 @@
     <div class="empty-cart" *ngIf="cart.length === 0">There are no items in your cart</div>
     <div #cartItemDiv class="cart-item" *ngFor="let cartItem of cart"
       (click)="cartItemDiv.preview=!cartItemDiv.preview;">
-      <gh-product class="preview" *ngIf="cartItemDiv.preview" class="preview" [product]="cartItem">
+      <gh-product class="preview" *ngIf="cartItemDiv.preview" class="preview" [product]="cartItem" [preview]="true">
       </gh-product>
       <img [src]="cartItem.imageUrl" />
       <div class="cart-text">{{cartItem.title}}</div>
