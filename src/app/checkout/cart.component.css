@@ -28,6 +28,12 @@
   padding: 10px 20px;
 }
 
+.cart-item .preview  {
+  position: absolute;
+}
+
+
+
 .cart-item:last-child {
   padding-bottom:20px;
 }

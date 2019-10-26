@@ -1,7 +1,10 @@
 <div>
   <div class="cart-items">
     <div class="empty-cart" *ngIf="cart.length === 0">There are no items in your cart</div>
-    <div class="cart-item" *ngFor="let cartItem of cart">
+    <div #cartItemDiv class="cart-item" *ngFor="let cartItem of cart"
+      (click)="cartItemDiv.preview=!cartItemDiv.preview;">
+      <gh-product class="preview" *ngIf="cartItemDiv.preview" class="preview" [product]="cartItem">
+      </gh-product>
       <img [src]="cartItem.imageUrl" />
       <div class="cart-text">{{cartItem.title}}</div>
       <div class="cart-text">{{cartItem.price | currency}}</div>
