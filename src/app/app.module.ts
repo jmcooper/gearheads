@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductListingComponent } from './products/product-listing.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { appRoutes } from './routes';
+import { ProductComponent } from './products/product.component';
 import { CartService } from './checkout/cart.service';
 import { CartComponent } from './checkout/cart.component';
 
@@ -13,6 +14,7 @@ import { CartComponent } from './checkout/cart.component';
   declarations: [
     AppComponent,
     ProductListingComponent,
+    ProductComponent,
     CheckoutComponent,
     CartComponent
   ],

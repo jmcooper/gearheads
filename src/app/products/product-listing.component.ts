@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CartService } from '../checkout/cart.service';
 
 @Component({
-  selector: 'product-listing',
   templateUrl: './product-listing.component.html',
   styleUrls: ['./product-listing.component.css']
 })

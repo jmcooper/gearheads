@@ -2,14 +2,8 @@
   <div class="products">
     <h1 class="section-header">Products</h1>
     <div class="product-listing">
-      <div class="product" *ngFor="let product of products">
-        <img [src]="product.imageUrl" />
-        <h2 class="title">{{product.title}}</h2>
-        <div class="price-line">
-          <div class="price">{{product.price | currency}}</div>
-          <button class="button-cta" (click)="addToCart(product)">Add to Cart</button>
-        </div>
-      </div>
+      <gh-product *ngFor="let product of products" [product]="product" (addToCartClicked)="addToCart($event)">
+      </gh-product>
     </div>
   </div>
   <div class="cart">
@@ -17,6 +11,6 @@
     <div class="checkout">
       <a [routerLink]="['/checkout']" class="button-cta">Checkout</a>
     </div>
-    <cart></cart>
+    <gh-cart></gh-cart>
   </div>
 </div>

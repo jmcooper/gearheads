@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CartService } from './cart.service';
 
 @Component({
-  selector: 'cart',
+  selector: 'gh-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
