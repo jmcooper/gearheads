@@ -8,6 +8,7 @@
   padding: 20px;
   font-size:18px;
 }
+
 .cart-items {
   display:flex;
   flex-direction: column;
@@ -28,11 +29,17 @@
   padding: 10px 20px;
 }
 
+.cart-product {
+  cursor: pointer;
+}
+
+.cart-product:hover .cart-text {
+  color: #1E9CD8;
+}
+
 .cart-item .preview  {
   position: absolute;
 }
-
-
 
 .cart-item:last-child {
   padding-bottom:20px;
