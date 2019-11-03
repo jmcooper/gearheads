@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { CartService } from '../checkout/cart.service';
 
 @Component({
   selector: 'gh-product',

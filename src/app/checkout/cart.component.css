@@ -8,6 +8,7 @@
   padding: 20px;
   font-size:18px;
 }
+
 .cart-items {
   display:flex;
   flex-direction: column;
@@ -28,11 +29,15 @@
   padding: 10px 20px;
 }
 
-.cart-item .preview  {
-  position: absolute;
+.cart-item:hover .cart-text {
+  color: #1E9CD8;
+  cursor: pointer;
 }
 
-
+.cart-item .preview  {
+  position: absolute;
+  cursor: pointer;
+}
 
 .cart-item:last-child {
   padding-bottom:20px;
@@ -46,6 +51,10 @@
   display: flex;
   align-items: center;
   text-align: left;
+}
+
+.discount-price {
+  color: red;
 }
 
 .cart-total {

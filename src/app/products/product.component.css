@@ -38,6 +38,10 @@
   font-size: 22px;
 }
 
+.discount-price {
+  color: red;
+}
+
 .products .section-header {
   margin-right: 20px;
   margin-left: 20px;

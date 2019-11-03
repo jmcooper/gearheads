@@ -1,3 +1,5 @@
+import { Product } from '../products/product';
+
 export class CartService {
   cart: any = [];
 
@@ -6,6 +8,6 @@ export class CartService {
   }
 
   addToCart(product) {
-    this.cart.push(product);
+    this.cart.push(new Product(product.title, product.image, product.price, product.discountPercent));
   }
 }

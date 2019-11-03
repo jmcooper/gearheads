@@ -13,12 +13,8 @@ export class CartComponent {
     this.cart = cartService.getCart();
   }
 
-  doIt() {
-    console.log('did it')
-  }
-
   getCartTotal() {
-    return this.cart.reduce((acc, product) => { return acc += product.price; }, 0);
+     return this.cart.reduce((acc, product) => { return acc += product.priceWithDiscount; }, 0);
   }
 
 
