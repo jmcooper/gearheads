@@ -9,3 +9,17 @@
 .checkout {
   width: 600px;
 }
+.continue-shopping  {
+  font-size: 16px;
+  color: #1E9CD8;
+}
+
+a {
+  color: #1E9CD8;
+  text-decoration:none;
+}
+
+a:hover {
+  color: #567a9e;
+}
+
