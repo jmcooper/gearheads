@@ -1,0 +1,39 @@
+.content {
+  background-color: #f7f5f5;
+  padding: 20px;
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.input-group {
+  display:flex;
+  align-items: center;
+}
+
+.input-group label {
+  flex: 0 0 150px;
+  text-align: right;
+}
+
+.input-group input {
+  width: 350px;
+}
+
+.address-edit {
+  display: flex;
+  align-items:top;
+}
+
+.address-display {
+  width:90%;
+}
+
+.button {
+  height:35px;
+  margin-top:30px;
+}

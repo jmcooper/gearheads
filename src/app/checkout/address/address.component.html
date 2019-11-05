@@ -1,0 +1,15 @@
+<div class="content">
+  <gh-address-edit 
+    *ngIf="editMode" 
+    [address]="address" 
+    [addressType]="addressType"
+    (addressUpdated)="updateAddress($event);">
+  </gh-address-edit>
+  <div class="address-edit" *ngIf="!editMode">
+    <gh-address-display 
+      [address]="address" 
+      class="address-display">
+    </gh-address-display>
+    <button class="button" (click)="editMode=true;">Change</button>
+  </div>
+</div>

@@ -5,5 +5,10 @@
       </span>
       <h1 class="section-header">Cart</h1>
     <gh-cart></gh-cart>
+    <gh-billing 
+      [shippingAddress]="userAccount.shippingAddress"
+      [billingAddress]="userAccount.billingAddress"
+      (addressUpdated)="updateAddress($event);">
+    </gh-billing>
   </div>
 </div>

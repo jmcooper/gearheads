@@ -2,6 +2,18 @@ p {
   margin: 0;
 }
 
+.button {
+  color: #555;
+  padding:10px;
+  font-size:14px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #1E9CD8;
+}
+
 .button-cta {
   background-color: #1E9CD8;
   color: white;

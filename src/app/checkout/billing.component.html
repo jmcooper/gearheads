@@ -1,0 +1,14 @@
+<div>
+  <h2 class="section-header">Shipping Address</h2>
+  <gh-address 
+    [address]="shippingAddress" 
+    [addressType]="'shipping'"
+    (addressUpdated)="updateAddress($event);">
+  </gh-address>
+  <h2 class="section-header">Billing Address</h2>
+  <gh-address 
+    [address]="billingAddress" 
+    [addressType]="'billing'" 
+    (addressUpdated)="updateAddress($event);">
+  </gh-address>
+</div>

@@ -1,0 +1,17 @@
+.content {
+  background-color: #f7f5f5;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.display-group {
+  display:flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.display-group span {
+  flex: 0 0 150px;
+  text-align: right;
+  margin-right: 15px;
+}

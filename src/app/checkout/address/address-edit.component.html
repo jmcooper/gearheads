@@ -1,0 +1,22 @@
+<div class="content">
+  <div>
+    <div class="input-group">
+      <label for="name">Name:</label><input [(ngModel)]="address.name" name="name"/>
+    </div>
+    <div class="input-group">
+        <label for="name">Address:</label><input [(ngModel)]="address.streetAddress" name="address"/>
+      </div>
+      <div class="input-group">
+      <label for="name">City:</label><input [(ngModel)]="address.city" name="city"/>
+    </div>
+    <div class="input-group">
+        <label for="name">State/Province:</label><input [(ngModel)]="address.state" name="state"/>
+    </div>
+    <div class="input-group">
+      <label for="name">Postal Code:</label><input [(ngModel)]="address.postalCode" name="postal-code"/>
+    </div>
+    <div class="save">
+      <button class="button-cta" (click)="save()">Save</button>
+    </div>
+  </div>
+</div>
