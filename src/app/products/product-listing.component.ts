@@ -19,7 +19,7 @@ export class ProductListingComponent {
     this.cartService.addToCart(product);
     if (this.cartComponent.getCartTotal() > 1000) {
       this.products.forEach(p => p.discountPercent = .1);
-    }
+    } 
   }
 
   products = [

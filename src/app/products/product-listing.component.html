@@ -1,6 +1,9 @@
 <div class="content">
   <div class="products">
-    <h1 class="section-header">Products</h1>
+    <div class="section-header">
+      <h1>Products</h1>
+      <div *ngIf="cart.getCartTotal() > 1000" class="discount">Discount!</div>
+    </div>
     <div class="product-listing">
       <gh-product *ngFor="let product of products" [product]="product" (addToCartClicked)="addToCart($event)">
       </gh-product>
@@ -11,6 +14,6 @@
     <div class="checkout">
       <a [routerLink]="['/checkout']" class="button-cta">Checkout</a>
     </div>
-    <gh-cart></gh-cart>
+    <gh-cart #cart></gh-cart>
   </div>
 </div>

@@ -65,3 +65,18 @@
   font-size: 22px;
   padding: 15px;
 }
+
+.section-header {
+  position:relative;
+  overflow: hidden;
+}
+
+.discount {
+  position: absolute;
+  right:0;
+  transform: rotate(45deg) translate(35px,-25px);
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 5px 40px;
+}
